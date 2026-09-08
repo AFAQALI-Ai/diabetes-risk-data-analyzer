@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from cleaning import clean_data
 from analysis import dataset_overview ,data_quality_report,risk_distribution,patient_analysis,health_factor_analysis,correlation_analysis
 
