@@ -1,5 +1,3 @@
-import pandas as pd
-
 def clean_data(df):
     print("Starting Data Cleaning...")
     numeric_missing = [
