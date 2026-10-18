@@ -122,6 +122,14 @@ Name: Diabetes_Risk, dtype: int64
 
 (Numbers above are illustrative — actual output depends on the dataset you load.)
 
+## Recent Updates
+
+- Added Matplotlib to introduce data visualization into the project.
+- Enhanced the Risk Distribution feature with a bar chart showing the number of records in each diabetes risk category.
+- Added chart labels, a title, and layout adjustments to make the visualization easier to read.
+- Added functionality to save the chart as `risk_distribution.png`.
+
+
 ## Future Improvements
 
 Being honest about where this project stands right now — these are things I haven't learned yet, not just nice-to-haves:

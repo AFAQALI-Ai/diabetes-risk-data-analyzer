@@ -46,14 +46,32 @@ def data_quality_report(df):
 
 # Risk Distribution:
 
+
 def risk_distribution(df):
+
+    import matplotlib.pyplot as plt
 
     print("\n" + "-" * 60)
     print("                 RISK DISTRIBUTION")
     print("-" * 60)
 
+    risk_counts = df["Diabetes_Risk"].value_counts()
+
     print("\n[ RISK LEVEL COUNTS ]")
-    print(df["Diabetes_Risk"].value_counts())
+    print(risk_counts)
+
+    plt.figure(figsize=(8, 5))
+    risk_counts.plot(kind="bar")
+
+    plt.title("Distribution of Diabetes Risk Categories")
+    plt.xlabel("Diabetes Risk Category")
+    plt.ylabel("Number of Records")
+    plt.xticks(rotation=0)
+    plt.tight_layout()
+
+    plt.savefig("risk_distribution.png", dpi=150)
+    plt.show()
+
 
 # Patient Analysis:
 
